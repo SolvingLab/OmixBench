@@ -1,0 +1,15 @@
+Package: llmhelper
+Type: Package
+Title: Help do anything with the LLM model
+Version: 1.0.0
+Authors@R: c(person("Zaoqu", "Liu", email = "liuzaoqu@163.com", role = c("aut", "cre"),comment=c(ORCID="0000-0002-0452-742X")))
+Description: Provides a unified interface for integrating multiple Large Language Model (LLM) providers into R workflows. Offers flexible prompt construction, JSON schema generation and validation, built-in retry mechanisms, and support for both cloud-based and local LLM deployment via Ollama.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 2.10)
+Imports: 
+    tidyprompt

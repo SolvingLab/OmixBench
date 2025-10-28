@@ -1,0 +1,21 @@
+Package: llmflow
+Type: Package
+Title: Streamlined LLM-R Integration with Intelligent Workflow Automation
+Version: 2.0.0
+Authors@R: c(person("Zaoqu", "Liu", email = "liuzaoqu@163.com", role = c("aut", "cre", "cph"),comment=c(ORCID="0000-0002-0452-742X")))
+Description: Provides a comprehensive framework for integrating Large Language Models (LLMs) 
+    with R programming through intelligent workflow automation. Built on the ReAct 
+    (Reasoning and Acting) architecture, 'llmflow' enables seamless bi-directional 
+    communication between LLMs and R environments. Key features include automated 
+    code generation and execution, intelligent error handling with retry mechanisms, 
+    persistent session management, structured JSON output validation, and context-aware 
+    conversation management. The package transforms complex LLM interactions into 
+    streamlined, reproducible workflows for data analysis, statistical computing, 
+    and research automation. Designed for data scientists, researchers, and analysts 
+    who want to leverage AI assistance while maintaining full control over their R 
+    computational environment.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: 
+    ellmer
