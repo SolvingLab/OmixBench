@@ -1,0 +1,15 @@
+Package: OmixBenchR
+Type: Package
+Title: Benchmarking Large Language Models in Omics Analysis
+Version: 1.0.0
+Authors@R: c(person("Zaoqu", "Liu", email = "liuzaoqu@163.com", role = c("aut", "cre"),comment=c(ORCID="0000-0002-0452-742X")))
+Description: Benchmarking of Large Language Models for Multi-omics Analysis
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 2.10)
+Imports: 
+    llmhelper
