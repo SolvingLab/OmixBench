@@ -188,7 +188,7 @@ for (idx in seq_along(level3_tasks)) {
     result <- Execute_Task(
       task_prompt = meta$Task_prompt,
       llm_client = llm_client,
-      timeout_sec = 1200,
+      timeout_sec = 1800,
       max_interactions = 10
     )
     
