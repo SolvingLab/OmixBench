@@ -57,41 +57,6 @@ ret_docs_prompt <- tryCatch(
 
 ### RAG Output - Function Identification
 
-The RAG LLM analyzes the task and identifies critical functions:
-
-```
-# Looking at this cell-cell communication analysis task, I need to identify only the CellChat-specific functions that have complex 
-# parameters or non-obvious usage patterns that would be difficult for an LLM to use correctly without documentation.
-# 
-# After careful analysis:
-#   
-#   {"functions": ["CellChat::createCellChat", "CellChat::computeCommunProb", "CellChat::subsetCommunication"]}
-# 
-# These three functions are truly critical because:
-#   - `createCellChat`: Requires specific input structure and grouping variable setup
-#   - `computeCommunProb`: Has the critical `population.size=FALSE` parameter that affects calculations
-#   - `subsetCommunication`: Requires specific syntax for extracting directional cell-cell interactions (DC->NK)
-# 
-# All other operations (data loading, filtering NAs, basic subsetting) use standard R/Seurat functions that any LLM would handle correctly 
-# without special documentation.
-
-# Generating examples for CellChat::computeCommunProb ...
-# Example 1: Basic computation without considering population size
-# Typical for analyzing communication strength independent of cell abundance
-cellchat <- computeCommunProb(cellchat, 
-                              population.size = FALSE)  # Don't weight by cell numbers
-
-# Example 2: Advanced computation with population weighting and custom parameters
-# Useful when cell type abundance matters for biological interpretation
-cellchat <- computeCommunProb(cellchat, 
-                              type = "truncatedMean",   # Use truncated mean method
-                              trim = 0.1,               # Trim 10% of extreme values
-                              population.size = TRUE,   # Weight by cell population size
-                              raw.use = FALSE)          # Use normalized data (default)
-```
-
-### View Retrieved Documentation
-
 ```r
 # Print the complete documentation prompt
 cat(ret_docs_prompt)
