@@ -45,10 +45,13 @@ ret_docs_prompt <- tryCatch(
 
 #The LLM only outputs the JSON content as shown below:
 #{
-#  CellChat::createCellChat
-#  CellChat::computeCommunProb
-#  CellChat::subsetCommunication
+#  "functions": [
+#    "CellChat::createCellChat",
+#    "CellChat::computeCommunProb",
+#    "CellChat::subsetCommunication"
+#  ]
 #}
+
 #Then, the retrieve_docs function will antomatically extract the docs of these functions.
 ```
 
