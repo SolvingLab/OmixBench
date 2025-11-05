@@ -49,7 +49,7 @@ ret_docs_prompt <- tryCatch(
 #  CellChat::computeCommunProb
 #  CellChat::subsetCommunication
 #}
-#Then, `the retrieve_docs` function will antomatically extract the docs of these functions.
+#Then, the retrieve_docs function will antomatically extract the docs of these functions.
 ```
 
 ### RAG Output - Function Identification
