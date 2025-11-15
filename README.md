@@ -656,3 +656,7 @@ This work would not have been possible without the contributions of the broader 
 - The Synapse platform for hosting the dynamic task datasets
 
 We hope this framework can serve as a useful resource for the community and contribute to advancing the responsible and effective integration of LLMs in computational biology research.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SolvingLab/OmixBench&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#SolvingLab/OmixBench&type=timeline&logscale&legend=top-left)
